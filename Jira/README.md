@@ -1,46 +1,22 @@
-## 🧩 Jira Klonu - Kanban Görev Yönetimi
+# Jira Uygulaması
 
-Bu proje, temel Jira mantığında çalışan bir Kanban görev yönetimi uygulamasıdır. Kullanıcılar görev ekleyebilir, tarih atayabilir, görevleri sütunlar arasında sürükleyebilir ve tema geçişi yapabilir.
+Bu proje, kullanıcıların görevlerini kolayca takip edebileceği bir **Jira** benzeri görev yönetim uygulamasıdır. Kullanıcılar, görevlerini farklı aşamalarda (Todo, In Progress, Done) sürükleyip bırakabilirler. Tema değişikliği, görevlerin kaydedilmesi ve bir dizi diğer özelleştirilmiş özellikleri içerir.
 
----
+## Özellikler
 
-## 🚀 Özellikler
+- **Sürükle ve Bırak**: Görevler, "Todo", "In Progress" ve "Done" sütunları arasında sürüklenebilir.
+- **Görev Ekleme**: Her sütun için yeni görevler eklenebilir.
+- **Tema Değiştirme**: Uygulama, koyu ve açık tema arasında geçiş yapma desteği sunar.
+- **Yerel Depolama Desteği**: Kullanıcıların görevleri, yerel depolama (localStorage) sayesinde tarayıcıda kaydedilir ve sayfa yenilendiğinde bile korunur.
+- **Responsive Tasarım**: Uygulama, tüm cihazlarda sorunsuz çalışacak şekilde tasarlanmıştır.
 
-# ✅ Görev Ekleme
-- Her sütunun altında “+” butonu ile görev eklenebilir.
-- Görevler `contenteditable` div'e yazılır.
-- Göreve istenirse tarih atanabilir.
-- “Kaydet” butonuyla görev listeye eklenir.
+## Kullanılan Teknolojiler
 
-# 📆 Tarih Etiketleri
-- Görevler eklenirken tarih seçilirse, görev kartının altında `⏰ YYYY-MM-DD` etiketi görünür.
+- **HTML**: Yapı
+- **CSS**: Stilleme (Flexbox, Animasyonlar, Responsive Tasarım)
+- **JavaScript**: Fonksiyonellik (Sürükle ve Bırak, Tema Değiştirme, Yerel Depolama)
+- **Yerel Depolama (localStorage)**: Görevlerin kaydedilmesi ve sayfa yenilendikçe korunması
 
-# ✏️ Görev Güncelleme
-- Eklenen görevler üzerine tıklanarak düzenlenebilir.
-- Düzenleme sonrası odaktan çıkıldığında otomatik kaydedilir.
-
-# 🧲 Sürükle-Bırak Desteği
-- Görevler `Todo`, `In Progress`, ve `Done` sütunları arasında drag & drop ile taşınabilir.
-- Her görev `draggable="true"` özelliğine sahiptir.
-
-# 💾 Kalıcı Kayıt (LocalStorage)
-- Uygulama localStorage kullanarak görevleri tarayıcıda saklar.
-- Sayfa yenilendiğinde veriler silinmez.
-
-# 🌙 / ☀️ Tema Geçişi
-- Sağ üstteki düğme ile `Karanlık Tema` ve `Aydınlık Tema` arasında geçiş yapılabilir.
-- Seçilen tema bilgisi localStorage’a kaydedilir.
-
-# 📱 Responsive Tasarım
-- Mobilde sütunlar alt alta gelir.
-- Masaüstü ve mobil uyumlu yapı.
-
-# 🎞️ Animasyonlar
-- Görev ekleme ve taşıma sırasında `fade` ve `bounce` animasyonları uygulanır.
-
----
-
-
-## 🖼️ Ekran Görüntüsü
-![Light Screen](Photo/LightMode.jpg)
-![Dark Screen](Photo/DarkMode.jpg)
+## 📸 Ekran Görüntüsü
+![Koyu Ekran](DarkTheme.jpg)
+![Açık Ekran](LightTheme.jpg)
